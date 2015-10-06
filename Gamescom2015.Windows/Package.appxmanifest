@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest"
+         xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"
+         xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" 
+         IgnorableNamespaces="appstudio">
+    
+  <Identity Name="22748glebanych.gamescom2015" Publisher="CN=C9040E3D-CD3A-44A3-B52F-886BB29C6309" Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>gamescom 2015</DisplayName>
+    <PublisherDisplayName>glebanych</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Gamescom2015.App">
+      <m2:VisualElements DisplayName="gamescom 2015" Description="gamescom 2015 app"
+                         ForegroundText="dark" 
+                         BackgroundColor="#f2f2f2"
+                         Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png">
+
+        <m2:DefaultTile ShortName="gamescom 2015"
+                        Wide310x150Logo="Assets\Wide310x150Logo.png"
+                        Square70x70Logo="Assets\Square70x70Logo.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#f2f2f2"/>
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+    
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="99f13d37-9033-41c0-8178-6f8ad051074d" />
+    <appstudio:Item Name="model" Version="1.11" />
+    <appstudio:Item Name="formula" Value="Win81" Version="1.11.0731.1" />
+    <appstudio:Item DataSource="YouTube" Version="0.1.0"/>
+    <appstudio:Item DataSource="Rss" Version="0.1.0"/>
+    <appstudio:Item DataSource="Instagram" Version="0.1.0"/>
+    <appstudio:Item DataSource="Menu" Version="0.1.0"/>
+    <appstudio:Item DataSource="Twitter" Version="0.1.0"/>
+  </appstudio:Metadata>
+</Package>
